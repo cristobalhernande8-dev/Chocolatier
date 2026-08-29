@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reposteria Criko</title>
+</head>
+
+<body style="
+    background-image: url('images (1).jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.292);
+">
+
+<style>
+.titulo {
+    font-size: 45px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    color: rgb(83, 0, 99);
+}
+
+.texto {
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: rgb(46, 0, 56);
+}
+
+        .eishin-contenedor {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 300px;
+            height: 400px;
+            z-index: 999;
+            cursor: pointer;
+        }
+
+
+        .eishin {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 400px;
+
+            transition:
+                transform 0.3s ease,
+                opacity 0.3s ease;
+        }
+
+
+        .imagen-hover {
+            opacity: 0;
+        }
+
+
+        .eishin-contenedor:hover .imagen-normal {
+            opacity: 0;
+            transform: scale(1.15);
+        }
+
+
+        .eishin-contenedor:hover .imagen-hover {
+            opacity: 1;
+            transform: scale(1.15);
+            width: 390px;
+        }
+
+.receta {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    width: 700px;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+}
+
+.receta:hover {
+    transform: scale(1.08);
+}
+
+.cuadro-texto {
+    width: 340px;
+    height: 300px;
+    padding: 25px;
+    background-color: rgba(255, 205, 251, 0.85);
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    margin-bottom: 35px;
+}
+
+.cuadro-imagen {
+    width: 340px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.822);
+    border-radius: 20px;
+    padding: 15px;
+    box-sizing: border-box;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    margin-bottom: 35px;
+}
+
+.cuadro-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 15px;
+}
+
+.cuadro-texto h2 {
+    color: rgb(83, 0, 99);
+}
+
+.cuadro-texto p {
+    font-size: 18px;
+}
+</style>
+
+<header>
+    <center>
+        <strong>
+            <h1 class="titulo">Opciones</h1>
+        </strong>
+    </center>
+</header>
+
+
+<article class="receta">
+
+    <div class="cuadro-texto">
+        <h2>Header</h2>
+        <p>
+            header (o cabecera) en programación es un bloque
+            de datos o código situado al principio
+            de un archivo, mensaje o página para organizar
+            la información y guiar al sistema sobre cómo
+            procesar el resto.
+        </p>
+    </div>
+
+    <div class="cuadro-imagen">
+        <a href="header.html">
+            <img src="hs.png" alt="Header">
+        </a>
+    </div>
+
+</article>
+
+
+<article class="receta">
+
+    <div class="cuadro-texto">
+        <h2>Nav</h2>
+
+        <p>
+            El elemento nav en HTML representa una sección
+            de una página web que contiene enlaces de navegación.
+        </p>
+
+        <center>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="menu.html">Opciones</a></li>
+                    <li><a href="header.html">Header</a></li>
+                    <li><a href="nav.html">Nav</a></li>
+                    <li><a href="article.html">Article</a></li>
+                </ul>
+            </nav>
+        </center>
+    </div>
+
+    <div class="cuadro-imagen">
+        <a href="nav.html">
+            <img src="ns.png" alt="Nav">
+        </a>
+    </div>
+
+</article>
+
+
+<article class="receta">
+
+    <div class="cuadro-texto">
+        <h2>Article</h2>
+
+        <p>
+            La etiqueta article en HTML representa un bloque de contenido
+            autónomo e independiente. Significa que el texto o los elementos
+            dentro de ella tienen sentido por sí mismos y se pueden leer
+            o compartir sin depender del resto de la página.
+        </p>
+    </div>
+
+    <div class="cuadro-imagen">
+       <a href="article.html">
+        <img src="hss.png" alt="Article">
+       </a> 
+    </div>
+
+</article>
+
+<a
+        href="index.html"
+        class="eishin-contenedor"
+    >
+
+        <img
+            src="amormio.png"
+            alt="Eishin"
+            class="eishin imagen-normal"
+        >
+        <img
+            src="amorprecioso.png"
+            alt="Eishin"
+            class="eishin imagen-hover"
+        >
+</a>
+
+</body>
+</html>
